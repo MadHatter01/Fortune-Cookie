@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import { useSpring, animated } from '@react-spring/web';
 
 import './App.css'
 
@@ -42,7 +43,11 @@ function App() {
   return (
     <>
       <div className={`cookie ${cracked ? 'cracked': ''}`} onClick={getFortune}> 🥠</div> 
-      <p>{fortune}</p>
+ 
+      <animated.div className="fortune-paper">
+        
+      <p>{fortune? fortune :''}</p>
+        </animated.div>
     </>
   )
 }

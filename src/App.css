@@ -56,6 +56,17 @@
 
 @keyframes opened{
   0%{transform: rotate(0);}
-  50%{transform: rotate(-20deg);}
+  50%{transform: rotate(-10deg);}
   1000%{transform: rotate((0));}
+}
+
+
+.fortune-paper{
+  background: white;
+  text-align: center;
+  border: 2px solid #ccc;
+  padding:10px;
+  border-radius: 4px;
+  color:black;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); 
 }
