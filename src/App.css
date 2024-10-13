@@ -49,3 +49,13 @@
 .cookie:hover{
   cursor: pointer;
 }
+
+.cracked{
+  animation: opened 1s ease forwards;
+}
+
+@keyframes opened{
+  0%{transform: rotate(0);}
+  50%{transform: rotate(-20deg);}
+  1000%{transform: rotate((0));}
+}

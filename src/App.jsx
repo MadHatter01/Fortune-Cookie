@@ -25,16 +25,23 @@ const keys = ['funny', 'inspirational']
 
 function App() {
   const [fortune, setFortune] = useState('');
+  const [cracked, setCracked] = useState(false);
 
   const getFortune = ()=>{
     const randIndex = Math.floor(Math.random()* keys.length);
     const cat = fortunes[keys[randIndex]]
-    setFortune(cat[Math.floor(Math.random()*cat.length)])
+    setFortune(cat[Math.floor(Math.random()*cat.length)]);
+    setCracked(true);
+
+    setTimeout(() => {
+      setCracked(false);
+    }, 1000);
+    
   }
 
   return (
     <>
-      <div className='cookie' onClick={getFortune}> 🥠</div> 
+      <div className={`cookie ${cracked ? 'cracked': ''}`} onClick={getFortune}> 🥠</div> 
       <p>{fortune}</p>
     </>
   )
