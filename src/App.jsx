@@ -27,9 +27,9 @@ function App() {
   const [fortune, setFortune] = useState('');
 
   const getFortune = ()=>{
-    const randIndex = Math.floor(Math.random()* keys.length)
-    // const randIndex = Math.floor(Math.random()*Object.keys(fortunes).length);
-    setFortune(fortunes[keys[randIndex]][0])
+    const randIndex = Math.floor(Math.random()* keys.length);
+    const cat = fortunes[keys[randIndex]]
+    setFortune(cat[Math.floor(Math.random()*cat.length)])
   }
 
   return (
