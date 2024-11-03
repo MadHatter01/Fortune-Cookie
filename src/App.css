@@ -68,5 +68,12 @@
   padding:10px;
   border-radius: 4px;
   color:black;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); 
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.9); 
+  height: fit-content;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
