@@ -1,8 +1,7 @@
-# React + Vite
+# Fortune Cookie
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Click on the cookie to receive a new fortune 🥠
 
-Currently, two official plugins are available:
+Built on React + React Spring
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/user-attachments/assets/f5f6ddc1-7d95-4175-8307-1406b65a9f75)
